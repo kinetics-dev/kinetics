@@ -1,0 +1,14 @@
+[build]
+publish = "dist"
+command = "yarn build"
+
+# This is only required for yarn projects
+[build.environment]
+NETLIFY_USE_YARN = true
+
+# This is required when this app needs to be run within Kinetics
+# In production you should update `Access-Control-Allow-Origin = "kinetics.dev"`
+[[headers]]
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"

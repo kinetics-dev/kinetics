@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "composite": true,
+    "declarationDir": "dist"
+  },
+  "files": ["src/kinetics-using-single-spa-react-netlify.tsx"],
+  "include": ["src/**/*"]
+}
