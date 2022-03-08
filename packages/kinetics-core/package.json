@@ -1,0 +1,51 @@
+{
+  "name": "kinetics-core",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinetics-dev/kinetics.git",
+    "directory": "packages/kinetics"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "targets": {
+    "main": {
+      "includeNodeModules": [
+        "node-fetch"
+      ]
+    }
+  },
+  "scripts": {
+    "watch": "parcel watch --no-scope-hoist --no-autoinstall --cache-dir .parcel-cache",
+    "build": "parcel build --no-scope-hoist --no-autoinstall --cache-dir .parcel-cache",
+    "test": "jest",
+    "prepare": "build"
+  },
+  "author": "nujhong",
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16",
+    "@types/node-fetch": "^2",
+    "eslint-config-kinetics": "^0.0.4",
+    "jest": "^27.5.1",
+    "nock": "^13.2.4",
+    "parcel": "^2.3.2",
+    "prettier": "^2.3.1",
+    "ts-jest": "^27.1.3",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "node-fetch": "^2"
+  }
+}

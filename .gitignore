@@ -1,4 +1,4 @@
-# Zero-Installs
+# Yarn Zero-Installs
 .yarn/*
 !.yarn/cache
 !.yarn/patches
