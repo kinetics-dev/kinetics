@@ -1,6 +1,7 @@
 import nock from "nock";
 
 import { Constants, verifyToken } from "../src";
+import * as utils from "../src/utils";
 
 describe("kinetics-node", () => {
   const env = process.env;
@@ -14,10 +15,10 @@ describe("kinetics-node", () => {
     await expect(verifyToken(undefined)).rejects.toThrow("Token is required");
   });
 
-  it.only("prints warning if one has been returned from the server", async () => {
+  it("prints warning if one has been returned from the server", async () => {
     process.env.KINETICS_API_KEY = "secret_apiKey";
 
-    jest.spyOn(console, "warn");
+    jest.spyOn(console, "warn").mockImplementation();
 
     const scope = nock("https://api.kinetics.dev", {
       reqheaders: {
@@ -29,6 +30,32 @@ describe("kinetics-node", () => {
 
     await expect(verifyToken("token")).resolves.toMatchObject({});
     expect(console.warn).toBeCalled();
+
+    scope.done();
+  });
+
+  it("prints warning only once throughout the process lifecycle", async () => {
+    process.env.KINETICS_API_KEY = "secret_apiKey";
+
+    jest.spyOn(utils, "warn").mockImplementation();
+    jest.spyOn(utils, "suppressDeprecationWarning");
+
+    const scope = nock("https://api.kinetics.dev", {
+      reqheaders: {
+        authorization: `Bearer secret_apiKey`,
+      },
+    })
+      .post("/core/access/auth/verify")
+      .times(2)
+      .reply(200, {}, { Warning: "API is deprecated" });
+
+    await expect(verifyToken("token")).resolves.toMatchObject({});
+
+    expect(utils.warn).toHaveBeenCalledTimes(1);
+    expect(utils.suppressDeprecationWarning).toBeCalled();
+
+    await expect(verifyToken("token")).resolves.toMatchObject({});
+    expect(utils.warn).not.toHaveBeenCalledTimes(1);
 
     scope.done();
   });
@@ -45,6 +72,7 @@ describe("kinetics-node", () => {
       .reply(200, {});
 
     await expect(verifyToken("token")).resolves.toMatchObject({});
+    expect(utils.warn).toBeCalled();
 
     scope.done();
   });

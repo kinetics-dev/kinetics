@@ -1,7 +1,12 @@
 import fetch, { Headers } from "node-fetch";
 
+import { VerifyTokenError } from "./errors";
 import { Config, ServiceError, User } from "./types";
-import { VerifyTokenError } from "./utils";
+import {
+  shouldPrintDeprecationWarning,
+  suppressDeprecationWarning,
+  warn,
+} from "./utils";
 
 const API_VERSION = "2022-02-22";
 const SDK_VERSION = "0.1.0";
@@ -20,7 +25,7 @@ export const Constants = {
  */
 export const verifyToken = async (
   /**
-   * Token passed from the client that is forwareded to the authorization server
+   * Token passed from the client that is forwarded to the authorization server
    */
   token: string,
 
@@ -64,11 +69,9 @@ export const verifyToken = async (
     body,
   });
 
-  if (response.headers.has("warning")) {
-    console.warn(
-      "\x1b[33m%s\x1b[0m",
-      `[KINETICS] ${response.headers.get("warning")}`
-    );
+  if (shouldPrintDeprecationWarning && response.headers.has("warning")) {
+    warn(`${response.headers.get("warning")}`);
+    suppressDeprecationWarning();
   }
 
   const json = await response.json();

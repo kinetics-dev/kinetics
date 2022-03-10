@@ -1,0 +1,27 @@
+name: kinetics-core
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - packages/kinetics-core/**
+      - .github/workflows/kinetics-core.yaml
+  pull_request:
+    branches: [main]
+    paths:
+      - packages/kinetics-core/**
+      - .github/workflows/kinetics-core.yaml
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/kinetics-core
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn
+      - run: yarn test
+      - run: yarn build
+      - run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+      - run: yarn npm publish --tolerate-republish

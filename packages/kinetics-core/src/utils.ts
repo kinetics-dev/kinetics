@@ -1,8 +1,21 @@
-import { ServiceError } from "./types";
+/* -------------------------------------------------------------------------- */
+/*                                   Logger                                   */
+/* -------------------------------------------------------------------------- */
+const DEFAULT_CONTEXT = "KINETICS";
 
-export class VerifyTokenError extends Error {
-  constructor(args: ServiceError) {
-    super(args.message);
-    Object.assign(this, args);
-  }
-}
+export const warn = (message: string, context = DEFAULT_CONTEXT) => {
+  console.warn("\x1b[33m%s\x1b[0m", `[${context}] ` + message);
+};
+
+/* -------------------------------------------------------------------------- */
+/*                                State Manager                               */
+/* -------------------------------------------------------------------------- */
+const stateManager = Object.seal({
+  shouldPrintDeprecationWarning: true,
+  suppressDeprecationWarning() {
+    stateManager.shouldPrintDeprecationWarning = false;
+  },
+});
+
+export const { shouldPrintDeprecationWarning, suppressDeprecationWarning } =
+  stateManager;

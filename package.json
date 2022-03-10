@@ -3,11 +3,19 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
+  },
   "devDependencies": {
+    "@parcel/core": "latest",
     "@parcel/packager-ts": "latest",
     "@parcel/transformer-typescript-types": "latest",
     "eslint": "latest",
+    "husky": "latest",
     "parcel": "latest",
+    "pinst": "latest",
     "prettier": "latest",
     "standard-version": "latest",
     "typescript": "4.5.5"
