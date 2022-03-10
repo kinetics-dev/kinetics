@@ -3818,6 +3818,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@tsconfig/recommended", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/@tsconfig-recommended-npm-1.0.1-d9691faba9-5f781e6a26.zip/node_modules/@tsconfig/recommended/",
+          "packageDependencies": [
+            ["@tsconfig/recommended", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/babel__core", [
         ["npm:7.1.18", {
           "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.1.18-b880226f3e-2e5b5d7c84.zip/node_modules/@types/babel__core/",
@@ -8884,6 +8893,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["kinetics-core", "workspace:packages/kinetics-core"],
             ["@rushstack/eslint-patch", "npm:1.1.0"],
+            ["@tsconfig/recommended", "npm:1.0.1"],
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:16.11.25"],
             ["@types/node-fetch", "npm:2.6.1"],
