@@ -13,3 +13,5 @@
 # Netlify
 .netlify
 
+# Snyk
+.dccache
