@@ -1,0 +1,22 @@
+{
+  "name": "in-memory-storage",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "keywords": [
+    "Storage"
+  ],
+  "scripts": {
+    "prepack": "tsc"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "eslint": "^8.11.0",
+    "eslint-config-kinetics": "workspace:*",
+    "typescript": "4.5.5"
+  }
+}
