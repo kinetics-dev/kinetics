@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/vite-react/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "types": ["vite/client"]
+  },
+  "include": ["src"],
+  "references": [{ "path": "tsconfig.node.json" }]
+}

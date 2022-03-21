@@ -8,6 +8,9 @@
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
+  "resolutions": {
+    "typescript": "4.5.5"
+  },
   "devDependencies": {
     "@parcel/core": "latest",
     "@parcel/packager-ts": "latest",
