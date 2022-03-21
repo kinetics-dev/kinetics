@@ -13,8 +13,11 @@ on:
       - .github/workflows/eslint-config-kinetics.yaml
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/eslint-config-kinetics
     steps:
       - uses: actions/checkout@v2
       - run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
