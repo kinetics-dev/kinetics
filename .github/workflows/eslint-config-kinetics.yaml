@@ -1,0 +1,21 @@
+name: eslint-config-kinetics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - packages/eslint-config-kinetics/**
+      - .github/workflows/eslint-config-kinetics.yaml
+  pull_request:
+    branches: [main]
+    paths:
+      - packages/eslint-config-kinetics/**
+      - .github/workflows/eslint-config-kinetics.yaml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+      - run: yarn npm publish --tolerate-republish
