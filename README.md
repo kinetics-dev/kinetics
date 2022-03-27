@@ -17,6 +17,7 @@ dependencies.</p>
 | Package                                  |         Description         |
 | :--------------------------------------- | :-------------------------: |
 | [examples](/examples)                    |          Examples           |
+| [kinetics-auth](/packages/kinetics-auth) |  Kinetics Auth SDK (React)  |
 | [kinetics-core](/packages/kinetics-core) | Kinetics Core SDK (Node.js) |
 
 # Documentation

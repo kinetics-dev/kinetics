@@ -18,10 +18,13 @@
     "dev": "vite",
     "prepack": "vite build && tsc",
     "size": "size-limit",
-    "test": "concurrently -k \"yarn dev\" \"cypress run\""
+    "e2e": "concurrently -k \"vite\" \"cypress run\"",
+    "cypress": "concurrently -k \"vite\" \"cypress open\""
   },
   "devDependencies": {
+    "@auth0/auth0-react": "^1.9.0",
     "@size-limit/preset-small-lib": "^7.0.8",
+    "@tsconfig/cypress": "^1.0.0",
     "@tsconfig/vite-react": "^1.0.0",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.33",
@@ -29,15 +32,13 @@
     "@vitejs/plugin-react": "^1.0.7",
     "concurrently": "^7.0.0",
     "cypress": "^9.5.2",
-    "dotenv": "^16.0.0",
     "eslint": "^8.11.0",
     "eslint-config-kinetics": "workspace:*",
-    "in-memory-storage": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "size-limit": "^7.0.8",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^2.8.6"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -46,11 +47,15 @@
   "size-limit": [
     {
       "path": "dist/index.es.js",
-      "limit": "2 kB"
+      "limit": "3 kB"
     },
     {
       "path": "dist/index.umd.js",
-      "limit": "2 kB"
+      "limit": "3 kB"
     }
-  ]
+  ],
+  "dependencies": {
+    "in-memory-storage": "workspace:*",
+    "nanoid": "^3.3.1"
+  }
 }

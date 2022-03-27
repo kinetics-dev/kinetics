@@ -1,8 +1,8 @@
 interface AuthConfig {
   clientId: string;
-  redirectURI: string;
+  workspaceId: string;
+  redirectTo: string;
   redirectFrom: string;
-  responseType: "token" | "code";
 }
 
 interface Auth {
@@ -14,7 +14,7 @@ interface Auth {
   /**
    *
    */
-  isAuthenticated: boolean;
+  isAuthenticated: boolean | null;
 
   /**
    *
@@ -30,4 +30,14 @@ interface Auth {
    *
    */
   logout: () => Promise<void> | void;
+}
+
+interface AccessTokenResponse {
+  access_token: string;
+  token_type: "Bearer";
+  expires_in: number;
+}
+
+interface ErrorResponse {
+  error: string;
 }
