@@ -1,7 +1,7 @@
 <br />
 
 <div align="center">
-  <a href="https://www.kinetics.dev"><img src="https://kinetics.dev/favicon.svg" height="96" width="96" alt="Kinetics"></a>
+  <a href="https://www.kinetics.dev"><img src="https://app.kinetics.dev/favicon.svg" height="96" width="96" alt="Kinetics"></a>
   <h3>Technology Management & Innovation platform</h3>
   <p>This is the monorepo repository for <a href="https://www.kinetics.dev/developers">Kinetics Developers</a>. It uses <a href="https://yarnpkg.com/features/workspaces">yarn workspaces</a> and <a href="https://yarnpkg.com/features/zero-installs">zero-install</a> to manage all 
 dependencies.</p>
