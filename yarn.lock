@@ -14,6 +14,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@auth0/auth0-react@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@auth0/auth0-react@npm:1.9.0"
+  dependencies:
+    "@auth0/auth0-spa-js": ^1.19.3
+  peerDependencies:
+    react: ^16.11.0 || ^17
+    react-dom: ^16.11.0 || ^17
+  checksum: 134ec1d7d97eaa74e31e58721598625e0349d677fb15339ea4242b52db9648b9ebde44a4ac6f4d3e125b7fccd05897d5e5d864cbcc2662779d7b21a9310bf63f
+  languageName: node
+  linkType: hard
+
+"@auth0/auth0-spa-js@npm:^1.19.3":
+  version: 1.20.1
+  resolution: "@auth0/auth0-spa-js@npm:1.20.1"
+  dependencies:
+    abortcontroller-polyfill: ^1.7.3
+    browser-tabs-lock: ^1.2.15
+    core-js: ^3.20.3
+    es-cookie: ^1.3.2
+    fast-text-encoding: ^1.0.3
+    promise-polyfill: ^8.2.1
+    unfetch: ^4.2.0
+  checksum: 284713ea43f07927ad075a2d71a26911660c7a2d7fe19899e3b40f2a73fe9a3e032c706f1dbd60be55bce5b3ced2e7d506bff582777f225422500e76174d3290
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:7.12.11":
   version: 7.12.11
   resolution: "@babel/code-frame@npm:7.12.11"
@@ -2007,7 +2034,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@kinetics-dev/auth@workspace:packages/kinetics-auth"
   dependencies:
+    "@auth0/auth0-react": ^1.9.0
     "@size-limit/preset-small-lib": ^7.0.8
+    "@tsconfig/cypress": ^1.0.0
     "@tsconfig/vite-react": ^1.0.0
     "@types/node": ^17.0.21
     "@types/react": ^17.0.33
@@ -2015,15 +2044,15 @@ __metadata:
     "@vitejs/plugin-react": ^1.0.7
     concurrently: ^7.0.0
     cypress: ^9.5.2
-    dotenv: ^16.0.0
     eslint: ^8.11.0
     eslint-config-kinetics: "workspace:*"
     in-memory-storage: "workspace:*"
+    nanoid: ^3.3.1
     react: ^17.0.2
     react-dom: ^17.0.2
     size-limit: ^7.0.8
     typescript: ^4.5.4
-    vite: ^2.8.0
+    vite: ^2.8.6
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -2915,6 +2944,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/cypress@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@tsconfig/cypress@npm:1.0.0"
+  checksum: 7c703663517856261d7b9ae508901d7aaaf980a7182be9436d9111aace1136b352385e285152cfb32ffe799c4065687fa734f1638ed5a3101089db1dfb7dae2c
+  languageName: node
+  linkType: hard
+
 "@tsconfig/recommended@npm:^1.0.1":
   version: 1.0.1
   resolution: "@tsconfig/recommended@npm:1.0.1"
@@ -3488,7 +3524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abortcontroller-polyfill@npm:^1.1.9":
+"abortcontroller-polyfill@npm:^1.1.9, abortcontroller-polyfill@npm:^1.7.3":
   version: 1.7.3
   resolution: "abortcontroller-polyfill@npm:1.7.3"
   checksum: 55739d7f0c9bd6afa2aabb3148778967c4dd4dcff91f6b9259df38da34f9882d3f7730b0954e9767a19cc16a8dd9a58915da4e8a50220300d45af3817d7557b1
@@ -4106,6 +4142,15 @@ __metadata:
   version: 1.0.0
   resolution: "browser-process-hrtime@npm:1.0.0"
   checksum: e30f868cdb770b1201afb714ad1575dd86366b6e861900884665fb627109b3cc757c40067d3bfee1ff2a29c835257ea30725a8018a9afd02ac1c24b408b1e45f
+  languageName: node
+  linkType: hard
+
+"browser-tabs-lock@npm:^1.2.15":
+  version: 1.2.15
+  resolution: "browser-tabs-lock@npm:1.2.15"
+  dependencies:
+    lodash: ">=4.17.21"
+  checksum: 79194361d5dbd0bf83f1e7e56fdbc209161d1c86f8211214512388df126d69b152512f073392e9415dec8d5e3b427045f9a9a3cb089ae7e7f6ed48dd6022ae74
   languageName: node
   linkType: hard
 
@@ -4863,6 +4908,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.20.3":
+  version: 3.21.1
+  resolution: "core-js@npm:3.21.1"
+  checksum: d68eddd831340ad5b24ac29c72fda022a43b17f194c4278b6b875a843283d316502cb4abd07f28631d6ebc4387f66aa06e2b1b3c8fd7e08096a751b5c63f6889
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:1.0.2":
   version: 1.0.2
   resolution: "core-util-is@npm:1.0.2"
@@ -5383,13 +5435,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "dotenv@npm:16.0.0"
-  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
-  languageName: node
-  linkType: hard
-
 "dotenv@npm:^7.0.0":
   version: 7.0.0
   resolution: "dotenv@npm:7.0.0"
@@ -5541,6 +5586,13 @@ __metadata:
     string.prototype.trimstart: ^1.0.4
     unbox-primitive: ^1.0.1
   checksum: b6be8410672c5364db3fb01eb786e30c7b4bb32b4af63d381c08840f4382c4a168e7855cd338bf59d4f1a1a1138f4d748d1fd40ec65aaa071876f9e9fbfed949
+  languageName: node
+  linkType: hard
+
+"es-cookie@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "es-cookie@npm:1.3.2"
+  checksum: 8509355a7d00bd2e3fcab4a76a90e0da35b40c1e76f114f8ffe805ab3fdfff51e8fc0e7cdccd9bf1536066150b6b9861e37d78ae14f80680513901902ac4f0df
   languageName: node
   linkType: hard
 
@@ -6601,6 +6653,13 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: 92cfec0a8dfafd9c7a15fba8f2cc29cd0b62b85f056d99ce448bbcd9f708e18ab2764bda4dd5158364f4145a7c72788538994f0d1787b956ef0d1062b0f7c24c
+  languageName: node
+  linkType: hard
+
+"fast-text-encoding@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "fast-text-encoding@npm:1.0.3"
+  checksum: 3e51365896f06d0dcab128092d095a0037d274deec419fecbd2388bc236d7b387610e0c72f920c6126e00c885ab096fbfaa3645712f5b98f721bef6b064916a8
   languageName: node
   linkType: hard
 
@@ -8675,7 +8734,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:>=4.17.21, lodash@npm:^4.17.15, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -10127,6 +10186,13 @@ __metadata:
   version: 1.0.1
   resolution: "promise-inflight@npm:1.0.1"
   checksum: 22749483091d2c594261517f4f80e05226d4d5ecc1fc917e1886929da56e22b5718b7f2a75f3807e7a7d471bc3be2907fe92e6e8f373ddf5c64bae35b5af3981
+  languageName: node
+  linkType: hard
+
+"promise-polyfill@npm:^8.2.1":
+  version: 8.2.3
+  resolution: "promise-polyfill@npm:8.2.3"
+  checksum: f320278bab8b8ce32f0e2f377d75aabe35c90a79f92b3e001db084d635da1fb8740ba8a26b5c1c2b4cdca5a4c988f9b6b3eb30f0b151d0362d3d9c1675024a8f
   languageName: node
   linkType: hard
 
@@ -11670,6 +11736,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unfetch@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "unfetch@npm:4.2.0"
+  checksum: 6a4b2557e1d921eaa80c4425ce27a404945ec26491ed06e62598f333996a91a44c7908cb26dc7c2746d735762b13276cf4aa41829b4c8f438dde63add3045d7a
+  languageName: node
+  linkType: hard
+
 "unicode-canonical-property-names-ecmascript@npm:^2.0.0":
   version: 2.0.0
   resolution: "unicode-canonical-property-names-ecmascript@npm:2.0.0"
@@ -11811,7 +11884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.8.0":
+"vite@npm:^2.8.6":
   version: 2.8.6
   resolution: "vite@npm:2.8.6"
   dependencies:

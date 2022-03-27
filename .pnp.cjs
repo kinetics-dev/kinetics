@@ -79,6 +79,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@auth0/auth0-react", [
+        ["npm:1.9.0", {
+          "packageLocation": "./.yarn/cache/@auth0-auth0-react-npm-1.9.0-b3252bd650-134ec1d7d9.zip/node_modules/@auth0/auth0-react/",
+          "packageDependencies": [
+            ["@auth0/auth0-react", "npm:1.9.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:1.9.0", {
+          "packageLocation": "./.yarn/__virtual__/@auth0-auth0-react-virtual-83a194dcad/0/cache/@auth0-auth0-react-npm-1.9.0-b3252bd650-134ec1d7d9.zip/node_modules/@auth0/auth0-react/",
+          "packageDependencies": [
+            ["@auth0/auth0-react", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:1.9.0"],
+            ["@auth0/auth0-spa-js", "npm:1.20.1"],
+            ["@types/react", "npm:17.0.41"],
+            ["@types/react-dom", "npm:17.0.14"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@auth0/auth0-spa-js", [
+        ["npm:1.20.1", {
+          "packageLocation": "./.yarn/cache/@auth0-auth0-spa-js-npm-1.20.1-60d1e8644d-284713ea43.zip/node_modules/@auth0/auth0-spa-js/",
+          "packageDependencies": [
+            ["@auth0/auth0-spa-js", "npm:1.20.1"],
+            ["abortcontroller-polyfill", "npm:1.7.3"],
+            ["browser-tabs-lock", "npm:1.2.15"],
+            ["core-js", "npm:3.21.1"],
+            ["es-cookie", "npm:1.3.2"],
+            ["fast-text-encoding", "npm:1.0.3"],
+            ["promise-polyfill", "npm:8.2.3"],
+            ["unfetch", "npm:4.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@babel/code-frame", [
         ["npm:7.12.11", {
           "packageLocation": "./.yarn/cache/@babel-code-frame-npm-7.12.11-1a9a1b277f-3963eff3eb.zip/node_modules/@babel/code-frame/",
@@ -5628,7 +5671,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/kinetics-auth/",
           "packageDependencies": [
             ["@kinetics-dev/auth", "workspace:packages/kinetics-auth"],
+            ["@auth0/auth0-react", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:1.9.0"],
             ["@size-limit/preset-small-lib", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:7.0.8"],
+            ["@tsconfig/cypress", "npm:1.0.0"],
             ["@tsconfig/vite-react", "npm:1.0.0"],
             ["@types/node", "npm:17.0.21"],
             ["@types/react", "npm:17.0.41"],
@@ -5636,10 +5681,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "npm:1.2.0"],
             ["concurrently", "npm:7.0.0"],
             ["cypress", "npm:9.5.2"],
-            ["dotenv", "npm:16.0.0"],
             ["eslint", "npm:8.11.0"],
             ["eslint-config-kinetics", "virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#workspace:packages/eslint-config-kinetics"],
             ["in-memory-storage", "workspace:packages/in-memory-storage"],
+            ["nanoid", "npm:3.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:17.0.2"],
             ["size-limit", "npm:7.0.8"],
@@ -6794,6 +6839,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@trysound-sax-npm-0.2.0-9f763d0295-11226c39b5.zip/node_modules/@trysound/sax/",
           "packageDependencies": [
             ["@trysound/sax", "npm:0.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@tsconfig/cypress", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@tsconfig-cypress-npm-1.0.0-31528bff97-7c70366351.zip/node_modules/@tsconfig/cypress/",
+          "packageDependencies": [
+            ["@tsconfig/cypress", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8486,6 +8540,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["browser-tabs-lock", [
+        ["npm:1.2.15", {
+          "packageLocation": "./.yarn/unplugged/browser-tabs-lock-npm-1.2.15-1833d8c9c7/node_modules/browser-tabs-lock/",
+          "packageDependencies": [
+            ["browser-tabs-lock", "npm:1.2.15"],
+            ["lodash", "npm:4.17.21"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["browserslist", [
         ["npm:4.19.3", {
           "packageLocation": "./.yarn/cache/browserslist-npm-4.19.3-580f50c44a-c28958313d.zip/node_modules/browserslist/",
@@ -9298,6 +9362,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["core-js", [
+        ["npm:3.21.1", {
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.21.1-4b064616b4/node_modules/core-js/",
+          "packageDependencies": [
+            ["core-js", "npm:3.21.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["core-js-compat", [
         ["npm:3.21.1", {
           "packageLocation": "./.yarn/cache/core-js-compat-npm-3.21.1-90d7dc97f2-6af1bcbc94.zip/node_modules/core-js-compat/",
@@ -9987,13 +10060,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["dotenv", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.0-ef4a5ccded-664cebb51f.zip/node_modules/dotenv/",
-          "packageDependencies": [
-            ["dotenv", "npm:16.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.0.0", {
           "packageLocation": "./.yarn/cache/dotenv-npm-7.0.0-9fbf3b4fd8-18a7b3ef0e.zip/node_modules/dotenv/",
           "packageDependencies": [
@@ -10173,6 +10239,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["string.prototype.trimend", "npm:1.0.4"],
             ["string.prototype.trimstart", "npm:1.0.4"],
             ["unbox-primitive", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["es-cookie", [
+        ["npm:1.3.2", {
+          "packageLocation": "./.yarn/cache/es-cookie-npm-1.3.2-626e96a30a-8509355a7d.zip/node_modules/es-cookie/",
+          "packageDependencies": [
+            ["es-cookie", "npm:1.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -11643,6 +11718,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fast-levenshtein-npm-2.0.6-fcd74b8df5-92cfec0a8d.zip/node_modules/fast-levenshtein/",
           "packageDependencies": [
             ["fast-levenshtein", "npm:2.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fast-text-encoding", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/fast-text-encoding-npm-1.0.3-0f6dc8b4a3-3e51365896.zip/node_modules/fast-text-encoding/",
+          "packageDependencies": [
+            ["fast-text-encoding", "npm:1.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -15900,6 +15984,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["promise-polyfill", [
+        ["npm:8.2.3", {
+          "packageLocation": "./.yarn/cache/promise-polyfill-npm-8.2.3-9655557b24-f320278bab.zip/node_modules/promise-polyfill/",
+          "packageDependencies": [
+            ["promise-polyfill", "npm:8.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["promise-retry", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/promise-retry-npm-2.0.1-871f0b01b7-f96a3f6d90.zip/node_modules/promise-retry/",
@@ -17579,6 +17672,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has-bigints", "npm:1.0.1"],
             ["has-symbols", "npm:1.0.2"],
             ["which-boxed-primitive", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["unfetch", [
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/unfetch-npm-4.2.0-7c13351021-6a4b2557e1.zip/node_modules/unfetch/",
+          "packageDependencies": [
+            ["unfetch", "npm:4.2.0"]
           ],
           "linkType": "HARD",
         }]

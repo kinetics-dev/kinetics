@@ -17,7 +17,6 @@ describe("Kinetics Auth", () => {
     const password = Cypress.env("password");
 
     cy.visit("http://localhost:3000");
-    cy.contains("Loading...");
     cy.contains("Sign in to your account");
     cy.get("input[name=email]").type(username);
     cy.get("input[name=password]").type(password);

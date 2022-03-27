@@ -12,5 +12,6 @@
     "types": ["vite/client"]
   },
   "include": ["src"],
+  "exclude": ["cypress"],
   "references": [{ "path": "tsconfig.node.json" }]
 }
