@@ -13,8 +13,8 @@
 
 describe("Kinetics Auth", () => {
   it("successfully loads, login and renders application", () => {
-    const username = Cypress.env("username");
-    const password = Cypress.env("password");
+    const username = Cypress.env("TEST_USERNAME");
+    const password = Cypress.env("TEST_PASSWORD");
 
     cy.visit("http://localhost:3000");
     cy.contains("Sign in to your account");

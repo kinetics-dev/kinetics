@@ -3,4 +3,4 @@ releases:
   in-memory-storage: patch
 
 declined:
-  - eslint-config-kinetics
+  - "@kinetics-dev/core"

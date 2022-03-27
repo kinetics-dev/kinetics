@@ -4,13 +4,13 @@ on:
   push:
     branches: [main]
     paths:
-      - packages/eslint-config-kinetics/**
       - .github/workflows/eslint-config-kinetics.yaml
+      - packages/eslint-config-kinetics/**
   pull_request:
     branches: [main]
     paths:
-      - packages/eslint-config-kinetics/**
       - .github/workflows/eslint-config-kinetics.yaml
+      - packages/eslint-config-kinetics/**
 
 jobs:
   release:

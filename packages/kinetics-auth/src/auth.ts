@@ -8,9 +8,8 @@ const KineticsAuthKeys = {
   CODE_VERIFIER: "@kinetics-dev/auth.code_verifier",
 };
 
-const kineticsAuthURL = import.meta.env.DEV
-  ? (import.meta.env.VITE_TEST_AUTH_URL as string)
-  : "https://auth.kinetics.dev";
+const kineticsAuthURL =
+  (import.meta.env.VITE_TEST_AUTH_URL as string) ?? "https://auth.kinetics.dev";
 
 const handleNavigate = (url: string) => {
   window.location.href = url;
