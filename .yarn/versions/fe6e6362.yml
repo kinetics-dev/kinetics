@@ -1,0 +1,3 @@
+declined:
+  - in-memory-storage
+  - "@kinetics-dev/auth"

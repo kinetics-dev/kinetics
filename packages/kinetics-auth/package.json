@@ -4,6 +4,17 @@
   "keywords": [
     "auth"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinetics-dev/kinetics.git",
+    "directory": "packages/kinetics-auth"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Junhong Chen",
+    "email": "jun@teammomentium.com",
+    "url": "https://momentium.com.au"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
@@ -20,7 +31,6 @@
   "scripts": {
     "dev": "vite",
     "prepack": "vite build && tsc",
-    "size": "size-limit",
     "test": "cypress run"
   },
   "dependencies": {

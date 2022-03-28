@@ -7353,9 +7353,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "in-memory-storage@workspace:packages/in-memory-storage"
   dependencies:
+    "@size-limit/preset-small-lib": ^7.0.8
     "@tsconfig/recommended": ^1.0.1
     eslint: ^8.11.0
     eslint-config-kinetics: "workspace:*"
+    size-limit: ^7.0.8
     typescript: 4.5.5
   languageName: unknown
   linkType: soft

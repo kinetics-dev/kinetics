@@ -5626,7 +5626,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/kinetics-auth/",\
           "packageDependencies": [\
             ["@kinetics-dev/auth", "workspace:packages/kinetics-auth"],\
-            ["@size-limit/preset-small-lib", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:7.0.8"],\
+            ["@size-limit/preset-small-lib", "virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#npm:7.0.8"],\
             ["@tsconfig/cypress", "npm:1.0.0"],\
             ["@tsconfig/vite-react", "npm:1.0.0"],\
             ["@types/node", "npm:17.0.21"],\
@@ -6707,10 +6707,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8", {\
-          "packageLocation": "./.yarn/__virtual__/@size-limit-esbuild-virtual-12f5c7f833/0/cache/@size-limit-esbuild-npm-7.0.8-c7cf80727a-1b89dfda0f.zip/node_modules/@size-limit/esbuild/",\
+        ["virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8", {\
+          "packageLocation": "./.yarn/__virtual__/@size-limit-esbuild-virtual-e21e3f9cc6/0/cache/@size-limit-esbuild-npm-7.0.8-c7cf80727a-1b89dfda0f.zip/node_modules/@size-limit/esbuild/",\
           "packageDependencies": [\
-            ["@size-limit/esbuild", "virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8"],\
+            ["@size-limit/esbuild", "virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8"],\
             ["@types/size-limit", null],\
             ["esbuild", "npm:0.14.27"],\
             ["nanoid", "npm:3.3.1"],\
@@ -6731,10 +6731,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8", {\
-          "packageLocation": "./.yarn/__virtual__/@size-limit-file-virtual-5ecb88450d/0/cache/@size-limit-file-npm-7.0.8-5d1e1f01a4-8762ae39ff.zip/node_modules/@size-limit/file/",\
+        ["virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8", {\
+          "packageLocation": "./.yarn/__virtual__/@size-limit-file-virtual-548c6298a0/0/cache/@size-limit-file-npm-7.0.8-5d1e1f01a4-8762ae39ff.zip/node_modules/@size-limit/file/",\
           "packageDependencies": [\
-            ["@size-limit/file", "virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8"],\
+            ["@size-limit/file", "virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8"],\
             ["@types/size-limit", null],\
             ["semver", "npm:7.3.5"],\
             ["size-limit", "npm:7.0.8"]\
@@ -6754,12 +6754,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:7.0.8", {\
-          "packageLocation": "./.yarn/__virtual__/@size-limit-preset-small-lib-virtual-637102f35f/0/cache/@size-limit-preset-small-lib-npm-7.0.8-7101773e48-b7c59c3f57.zip/node_modules/@size-limit/preset-small-lib/",\
+        ["virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#npm:7.0.8", {\
+          "packageLocation": "./.yarn/__virtual__/@size-limit-preset-small-lib-virtual-7771c70402/0/cache/@size-limit-preset-small-lib-npm-7.0.8-7101773e48-b7c59c3f57.zip/node_modules/@size-limit/preset-small-lib/",\
           "packageDependencies": [\
-            ["@size-limit/preset-small-lib", "virtual:2b36694cc8eb8ebb6e576344c443da3f5c8e17027757ccdb1e7ae8b079d067e38c0aca0307eb81d37de75c7b2bbff315218adc5c269f870f94cd77e475fe1a60#npm:7.0.8"],\
-            ["@size-limit/esbuild", "virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8"],\
-            ["@size-limit/file", "virtual:637102f35ff7a32dde9c739d0ef844ee6c80f9e0d9123c4c037f8a42e8f825e85225516ab4e82d02fd30eb89ccb978c238921e30c5a96bdecb8c439cf177a3d8#npm:7.0.8"],\
+            ["@size-limit/preset-small-lib", "virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#npm:7.0.8"],\
+            ["@size-limit/esbuild", "virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8"],\
+            ["@size-limit/file", "virtual:7771c70402f257bc3945dd0dd12a4dee2127a7105806e04b35ef2a0539fee2d2211b122afe8968b88eee7b21d26cc29103da5c1e47eb2c252fde4f36b6907a85#npm:7.0.8"],\
             ["@types/size-limit", null],\
             ["size-limit", "npm:7.0.8"]\
           ],\
@@ -12536,9 +12536,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/in-memory-storage/",\
           "packageDependencies": [\
             ["in-memory-storage", "workspace:packages/in-memory-storage"],\
+            ["@size-limit/preset-small-lib", "virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#npm:7.0.8"],\
             ["@tsconfig/recommended", "npm:1.0.1"],\
             ["eslint", "npm:8.11.0"],\
             ["eslint-config-kinetics", "virtual:667ccd4b7a5ef8b5552bdfc513be0b348d6257d4a545b2deb9b6a364d2075e12522add0326123c0b961c7f3b88b51c3acc67de0304520d80f6b1c785ec4cacae#workspace:packages/eslint-config-kinetics"],\
+            ["size-limit", "npm:7.0.8"],\
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
