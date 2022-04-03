@@ -11,4 +11,8 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  */
 module.exports = {
   extends: ["react-app", "eslint-config-kinetics/shared"],
+  rules: {
+    "react/jsx-boolean-value": ["error", "never"],
+    "react/jsx-no-bind": "warn", // performance
+  },
 };
