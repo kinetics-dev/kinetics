@@ -1,6 +1,5 @@
-releases:
-  "@kinetics-dev/auth": patch
-  in-memory-storage: patch
-
 declined:
   - "@kinetics-dev/core"
+
+undecided:
+  - eslint-config-kinetics
