@@ -1,5 +1,0 @@
-declined:
-  - "@kinetics-dev/core"
-
-undecided:
-  - eslint-config-kinetics

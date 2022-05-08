@@ -11,7 +11,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  */
 module.exports = {
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2020,
   },
   plugins: ["simple-import-sort", "import"],
   extends: [
