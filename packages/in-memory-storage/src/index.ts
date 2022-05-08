@@ -23,7 +23,7 @@ type Configuration = {
  */
 type SetItemOptions = {
   /**
-   * Time to live
+   * Time to live in milliseconds
    */
   ttl: number;
 };

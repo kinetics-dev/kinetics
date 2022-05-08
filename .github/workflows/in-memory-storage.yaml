@@ -1,0 +1,24 @@
+name: in-memory-storage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/in-memory-storage.yaml
+      - packages/in-memory-storage/**
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/in-memory-storage.yaml
+      - packages/in-memory-storage/**
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/in-memory-storage
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+      - run: yarn npm publish --tolerate-republish
