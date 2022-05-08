@@ -1,0 +1,5 @@
+releases:
+  in-memory-storage: patch
+
+undecided:
+  - "@kinetics-dev/core"
