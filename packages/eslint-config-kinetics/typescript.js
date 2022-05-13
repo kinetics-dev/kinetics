@@ -37,7 +37,6 @@ module.exports = {
                 message: "Use symbol instead",
                 fixWith: "symbol",
               },
-
               "Function": {
                 message: [
                   "The `Function` type accepts any function-like value.",

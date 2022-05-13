@@ -10,7 +10,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-  extends: ["react-app", "eslint-config-kinetics/shared"],
+  extends: ["react-app", "./shared"],
   rules: {
     "react/jsx-boolean-value": ["error", "never"],
     "react/jsx-no-bind": "warn", // performance

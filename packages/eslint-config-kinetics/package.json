@@ -21,7 +21,6 @@
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
@@ -32,12 +31,9 @@
     "@types/babel__core": "^7",
     "@types/babel__preset-env": "^7",
     "@types/eslint": "^8.4.1",
-    "@types/prettier": "^2.4.4"
+    "@types/prettier": "^2.6.0"
   },
   "peerDependencies": {
     "eslint": ">=8"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   }
 }

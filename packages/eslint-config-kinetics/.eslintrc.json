@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": "eslint-config-kinetics/prettier"
+  "extends": "./prettier"
 }

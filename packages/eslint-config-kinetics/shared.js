@@ -14,14 +14,10 @@ module.exports = {
     ecmaVersion: 2020,
   },
   plugins: ["simple-import-sort", "import"],
-  extends: [
-    "eslint-config-kinetics/prettier",
-    "eslint-config-kinetics/typescript",
-  ],
+  extends: ["./prettier", "./typescript"],
   rules: {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-
     "sort-imports": "off",
     "import/first": "error",
     "import/newline-after-import": "error",
