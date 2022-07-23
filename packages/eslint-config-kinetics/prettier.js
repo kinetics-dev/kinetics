@@ -12,6 +12,8 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
   extends: ["prettier"],
   rules: {
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
     "quote-props": ["error", "consistent"],
   },
 };
