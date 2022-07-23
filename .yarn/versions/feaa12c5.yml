@@ -1,4 +1,0 @@
-undecided:
-  - eslint-config-kinetics
-  - "@kinetics-dev/core"
-  - "@kinetics-dev/webpack-config"

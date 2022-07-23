@@ -1,6 +1,6 @@
 {
   "name": "@kinetics-dev/core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/kinetics-dev/kinetics.git",
@@ -32,7 +32,7 @@
     "@types/jest": "^27.4.0",
     "@types/node": "^14",
     "@types/node-fetch": "^2",
-    "eslint-config-kinetics": "^0.0.4",
+    "eslint-config-kinetics": "workspace:*",
     "jest": "^27.5.1",
     "nock": "^13.2.4",
     "parcel": "latest",
