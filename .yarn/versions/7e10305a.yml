@@ -1,0 +1,3 @@
+undecided:
+  - eslint-config-kinetics
+  - "@kinetics-dev/core"
