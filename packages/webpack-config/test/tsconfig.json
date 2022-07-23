@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}
