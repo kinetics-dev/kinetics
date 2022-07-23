@@ -26,7 +26,9 @@ export type Config =
   | {
       clientId: string;
       clientSecret: string;
+      workspace?: string;
     }
   | {
       apiKey: string;
+      workspace?: string;
     };

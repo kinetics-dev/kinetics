@@ -1,9 +1,9 @@
 import nock from "nock";
 
-import { Constants, verifyToken } from "../src";
+import { Constants, getMember, verifyToken } from "../src";
 import * as utils from "../src/utils";
 
-describe("kinetics-node", () => {
+describe("verifyToken", () => {
   const env = process.env;
 
   beforeEach(() => {
@@ -114,6 +114,40 @@ describe("kinetics-node", () => {
       .reply(200, {});
 
     await expect(verifyToken("token")).resolves.toMatchObject({});
+
+    scope.done();
+  });
+});
+
+describe("getMember", () => {
+  const env = process.env;
+
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = { ...env };
+  });
+
+  it("throws error if member id is not provided", async () => {
+    await expect(getMember(undefined)).rejects.toThrow("Member ID is required");
+  });
+
+  it("throws error if workspace is not provided", async () => {
+    await expect(getMember("123")).rejects.toThrow("Workspace is required");
+  });
+
+  it("builds request correctly", async () => {
+    process.env.KINETICS_API_KEY = "secret_apiKey";
+    process.env.KINETICS_WORKSPACE = "workspace";
+
+    const scope = nock("https://api.kinetics.dev", {
+      reqheaders: {
+        "Api-Version": Constants.apiVersion,
+      },
+    })
+      .get("/core/workspaces/workspace/members/123")
+      .reply(200, {});
+
+    await expect(getMember("123")).resolves.toMatchObject({});
 
     scope.done();
   });
