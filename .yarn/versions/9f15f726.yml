@@ -1,2 +1,2 @@
-undecided:
-  - in-memory-storage
+releases:
+  in-memory-storage: minor

@@ -19,6 +19,11 @@ type Configuration = {
 };
 
 /**
+ * Subscription to value by key.
+ */
+type Listener = <T = string>(value: T | null) => void;
+
+/**
  * Options that can be passed to `setItem()`
  */
 type SetItemOptions = {
@@ -32,10 +37,14 @@ const EMPTY_OBJECT = {};
 
 /**
  * InMemoryStorage is similar to SessionStorage that also implements the Web Storage interface.
- * The difference is that the reference it's not accessible in devTools.
  */
 class InMemoryStorage implements Storage {
+  [x: string]: any;
   private items: Map<string, any> | Record<string, any>;
+  private listeners: Map<string, Set<Listener>> = new Map<
+    string,
+    Set<Listener>
+  >();
 
   constructor(
     private readonly config: Configuration = {
@@ -80,6 +89,8 @@ class InMemoryStorage implements Storage {
     } else {
       delete (<Record<string, any>>this.items)[key];
     }
+
+    this.listeners.get(key)?.forEach((listener) => listener(null));
   }
 
   setItem<T>(key: string, value: T, options?: Partial<SetItemOptions>) {
@@ -88,6 +99,8 @@ class InMemoryStorage implements Storage {
     } else {
       (<Record<string, any>>this.items)[key] = value;
     }
+
+    this.listeners.get(key)?.forEach((listener) => listener(value));
 
     // Post setItem
     if (options?.ttl) {
@@ -103,6 +116,18 @@ class InMemoryStorage implements Storage {
     } else {
       return (<Record<string, any>>this.items)[key] ?? null;
     }
+  }
+
+  onItemChange(key: string, listener: Listener) {
+    let set = this.listeners.get(key);
+
+    if (!set) {
+      set = new Set<Listener>()
+      this.listeners.set(key, set)
+    }
+
+    set?.add(listener);
+    return () => set?.delete(listener);
   }
 }
 

@@ -48,5 +48,20 @@ describe("in-memory-storage", () => {
     expect(inMemoryStorage.getItem("object")).toBe(null);
   });
 
+  it("onItemChange()", () => {
+    const onChange = jest.fn()
+
+    inMemoryStorage.onItemChange('foo', onChange)
+
+    inMemoryStorage.setItem("foo", "bar")
+    expect(onChange).toHaveBeenCalledWith('bar')
+
+    inMemoryStorage.setItem("foo", "baz")
+    expect(onChange).toHaveBeenCalledWith('baz')
+
+    inMemoryStorage.removeItem("foo")
+    expect(onChange).toHaveBeenCalledTimes(3)
+  });
+
   it.todo("benchmark performance vs memory");
 });
