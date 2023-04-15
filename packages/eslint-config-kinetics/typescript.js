@@ -17,6 +17,10 @@ module.exports = {
       plugins: ["@typescript-eslint", "eslint-plugin-tsdoc"],
       extends: ["plugin:@typescript-eslint/recommended"],
       rules: {
+        "@typescript-eslint/no-inferrable-types": [
+          "error",
+          { ignoreParameters: true },
+        ],
         "@typescript-eslint/ban-types": [
           "error",
           {

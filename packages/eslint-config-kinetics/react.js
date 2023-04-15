@@ -14,5 +14,11 @@ module.exports = {
   rules: {
     "react/jsx-boolean-value": ["error", "never"],
     "react/jsx-no-bind": "warn", // performance
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        additionalHooks: "(useRecoilCallback|useRecoilTransaction_UNSTABLE)",
+      },
+    ],
   },
 };
