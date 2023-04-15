@@ -127,7 +127,9 @@ class InMemoryStorage implements Storage {
     }
 
     set?.add(listener);
-    return () => set?.delete(listener);
+    return () => {
+      set?.delete(listener)
+    };
   }
 }
 
