@@ -9,29 +9,29 @@
     "typescript.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.1",
-    "@rushstack/eslint-patch": "^1.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-react-app": "^7.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-flowtype": "^8.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-tsdoc": "^0.2.14",
-    "prettier": "^2.6.0"
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "prettier": "^2.8.8"
   },
   "devDependencies": {
     "@types/babel__core": "^7",
     "@types/babel__preset-env": "^7",
-    "@types/eslint": "^8.4.1",
-    "@types/prettier": "^2.6.0"
+    "@types/eslint": "^8.40.2",
+    "@types/prettier": "^2.7.3"
   },
   "peerDependencies": {
     "eslint": ">=8"

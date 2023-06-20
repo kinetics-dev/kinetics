@@ -13,7 +13,6 @@ module.exports = {
   extends: ["react-app", "./shared"],
   rules: {
     "react/jsx-boolean-value": ["error", "never"],
-    "react/jsx-no-bind": "warn", // performance
     "react-hooks/exhaustive-deps": [
       "warn",
       {
