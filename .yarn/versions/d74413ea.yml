@@ -1,3 +1,2 @@
-undecided:
-  - eslint-config-kinetics
-  - in-memory-storage
+releases:
+  eslint-config-kinetics: patch
