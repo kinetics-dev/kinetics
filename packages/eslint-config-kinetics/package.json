@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kinetics",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "files": [
     "index.js",
     "prettier.js",
@@ -12,8 +12,8 @@
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@rushstack/eslint-patch": "^1.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.8.0",
