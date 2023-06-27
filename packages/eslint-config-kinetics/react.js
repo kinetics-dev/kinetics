@@ -10,7 +10,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-  extends: ["react-app"],
+  extends: ["plugin:react/recommended", "plugin:react-hooks/recommended"],
   rules: {
     "react/jsx-boolean-value": ["error", "never"],
     "react-hooks/exhaustive-deps": [
