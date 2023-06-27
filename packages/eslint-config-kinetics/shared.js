@@ -13,8 +13,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
+  extends: ["eslint:recommended", "./prettier", "./typescript"],
   plugins: ["simple-import-sort", "import"],
-  extends: ["./prettier", "./typescript"],
   rules: {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
@@ -25,3 +25,5 @@ module.exports = {
     "no-empty-function": "off",
   },
 };
+
+
