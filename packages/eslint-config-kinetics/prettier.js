@@ -10,10 +10,8 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-  extends: ["prettier"],
+  extends: ["plugin:prettier/recommended"],
   rules: {
-    "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
     "quote-props": ["error", "consistent"],
   },
 };
