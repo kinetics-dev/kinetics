@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kinetics",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "files": [
     "index.js",
     "prettier.js",
