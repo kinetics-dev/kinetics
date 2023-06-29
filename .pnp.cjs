@@ -8865,6 +8865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:2.27.5"],\
             ["eslint-plugin-jsx-a11y", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:6.7.1"],\
+            ["eslint-plugin-prettier", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.6.0"],\
             ["eslint-plugin-simple-import-sort", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:10.0.0"],\
@@ -8895,6 +8896,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-flowtype", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:8.0.3"],\
             ["eslint-plugin-import", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:2.27.5"],\
             ["eslint-plugin-jsx-a11y", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:6.7.1"],\
+            ["eslint-plugin-prettier", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.2.1"],\
             ["eslint-plugin-react", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.6.0"],\
             ["eslint-plugin-simple-import-sort", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:10.0.0"],\
@@ -9084,6 +9086,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/eslint",\
             "eslint"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["eslint-plugin-prettier", [\
+        ["npm:4.2.1", {\
+          "packageLocation": "./.yarn/cache/eslint-plugin-prettier-npm-4.2.1-ba8e1240f1-b9e839d233.zip/node_modules/eslint-plugin-prettier/",\
+          "packageDependencies": [\
+            ["eslint-plugin-prettier", "npm:4.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-prettier-virtual-a2903807bf/0/cache/eslint-plugin-prettier-npm-4.2.1-ba8e1240f1-b9e839d233.zip/node_modules/eslint-plugin-prettier/",\
+          "packageDependencies": [\
+            ["eslint-plugin-prettier", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:4.2.1"],\
+            ["@types/eslint", "npm:8.40.2"],\
+            ["@types/eslint-config-prettier", null],\
+            ["@types/prettier", "npm:2.7.3"],\
+            ["eslint", "npm:8.11.0"],\
+            ["eslint-config-prettier", "virtual:a44116da67561744877b451e19191b6f46f887e60be2aa5069b82d9803b34142fe0817f5e14b4897bf225616013b3dd482103fb0a6d323bffc6de6c28dc83cd1#npm:8.8.0"],\
+            ["prettier", "npm:2.8.8"],\
+            ["prettier-linter-helpers", "npm:1.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/eslint-config-prettier",\
+            "@types/eslint",\
+            "@types/prettier",\
+            "eslint-config-prettier",\
+            "eslint",\
+            "prettier"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9462,6 +9495,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fast-deep-equal-npm-3.1.3-790edcfcf5-e21a9d8d84.zip/node_modules/fast-deep-equal/",\
           "packageDependencies": [\
             ["fast-deep-equal", "npm:3.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["fast-diff", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/fast-diff-npm-1.3.0-9f19e3b743-d22d371b99.zip/node_modules/fast-diff/",\
+          "packageDependencies": [\
+            ["fast-diff", "npm:1.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13942,6 +13984,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-npm-2.8.8-430828a36c-b49e409431.zip/node_modules/prettier/",\
           "packageDependencies": [\
             ["prettier", "npm:2.8.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prettier-linter-helpers", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/prettier-linter-helpers-npm-1.0.0-6925131a7e-00ce8011cf.zip/node_modules/prettier-linter-helpers/",\
+          "packageDependencies": [\
+            ["prettier-linter-helpers", "npm:1.0.0"],\
+            ["fast-diff", "npm:1.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
