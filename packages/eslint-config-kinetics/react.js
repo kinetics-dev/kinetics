@@ -12,6 +12,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
   extends: ["plugin:react/recommended", "plugin:react-hooks/recommended"],
   rules: {
+    "react/prop-types": "off",
     "react/jsx-boolean-value": ["error", "never"],
     "react-hooks/exhaustive-deps": [
       "warn",
