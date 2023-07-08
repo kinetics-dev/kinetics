@@ -21,6 +21,7 @@ module.exports = {
           "error",
           { ignoreParameters: true },
         ],
+        "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/ban-types": [
           "error",
           {
