@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": "./prettier"
+  "extends": "./index.js"
 }
