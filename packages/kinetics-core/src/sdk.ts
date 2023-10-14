@@ -2,7 +2,7 @@ import fetch, { Headers } from "node-fetch";
 
 import { Constants } from "./constants";
 import { VerifyTokenError } from "./errors";
-import { Config, ServiceError, User } from "./types";
+import type { Config, ServiceError, User } from "./types";
 import {
   shouldPrintDeprecationWarning,
   suppressDeprecationWarning,
