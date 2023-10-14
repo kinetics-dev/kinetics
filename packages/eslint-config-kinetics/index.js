@@ -4,4 +4,4 @@
  *
  * https://www.npmjs.com/package/@rushstack/eslint-patch
  */
-module.exports = require("./shared");
+module.exports = require("./lib/shared.js");
